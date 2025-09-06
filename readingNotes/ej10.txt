@@ -1,1 +1,17 @@
-rules when it comes to overriding equals()
+❌ when there is no need to override
+    1. instance of a class is unique by nature (User)
+    2. identity matters more than contents (db connection)
+    3. superclass overrides equals already && it makes sense for the class
+    4. private & package private classes && equals will never be used
+
+✅ need to override equals()
+    1. When designing a value class
+        - exception: if only one object exists per value (enums, caching)
+
+📝 Java Review
+    - use 🟪 private static 🟪 when the inner class doesn't need to access 
+    outer class instance
+    - use 🟪 private non-static 🟪 when it needs access to outer class
+    
+    
+
