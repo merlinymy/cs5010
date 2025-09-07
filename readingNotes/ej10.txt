@@ -8,10 +8,25 @@
     1. When designing a value class
         - exception: if only one object exists per value (enums, caching)
 
+📏 1. Reflexivity: A === A -> A === A
+    2. Symmetry: A === B -> B === A
+    3. Transitivity: A === B, B === C => A === B === C
+        - Can't preseving the transitivity if extend a class and add a field. 
+        - use composition
+🍪 1. '==' check reference
+    2. 'instanceof' check type
+    3. cast to correct type: (CorrectType) otherType
+    4. 
+
 📝 Java Review
     - use 🟪 private static 🟪 when the inner class doesn't need to access 
     outer class instance
     - use 🟪 private non-static 🟪 when it needs access to outer class
+    - abstruct class can't be instantiated
+    - abstruct methods must be implemented by concrete class
+    - interface has no constructor
+    - interface supports multi inheritance
+    - interface only has shared constants
     
     
 
