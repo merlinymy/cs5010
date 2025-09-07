@@ -16,7 +16,11 @@
 🍪 1. '==' check reference
     2. 'instanceof' check type
     3. cast to correct type: (CorrectType) otherType
-    4. 
+    4. use '==' to compare primitive (Float.compare, Double.compare)
+    5. compare important fields
+    6. Objects.equals(Object, Object) If field can be null
+    7. override hashcode
+    8. use IDE or AutoValue to auto generate 
 
 📝 Java Review
     - use 🟪 private static 🟪 when the inner class doesn't need to access 
