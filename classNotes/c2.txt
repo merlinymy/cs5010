@@ -1,0 +1,18 @@
+Hashing, Hashcode, HashSet, HashTable
+
+- hash collision:
+    - probing, move to the next location 
+    - chaining, linkedList 
+
+🔨 A HashSet
+    1. when call add, call hashfunction, check location, if null, create new linkedlist
+
+HashCode:
+    override hashCode() whenever overriding equals()
+
+📏 
+    1. always return the same value for a given object
+    2. Obj A equals.(Obj B), hashCode() must return the same values for them.
+    ✅ 3. Quick to compute
+        4. Different strings have diff hash values
+        
